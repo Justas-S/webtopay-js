@@ -57,14 +57,14 @@ export interface PaymentNotification {
   account: string;
   personcodestatus: PersonCodeStatus;
 }
-enum PaymentStatus {
+export enum PaymentStatus {
   NotExecuted = 0,
   Successful = 1,
   Accepted = 2,
   AdditionalInfo = 3
 }
 
-enum PersonCodeStatus {
+export enum PersonCodeStatus {
   UnknownYet = 0,
   Match = 1,
   NotMatch = 2,
