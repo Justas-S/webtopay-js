@@ -39,13 +39,13 @@ class WebToPay {
     async decodePaymentResponseQuery(query) {
         const params = querystring_1.default.parse(PayseraBase64_1.PayseraBase64.decode(query).toString("ascii"));
         if (typeof params.data !== "string") {
-            throw new Error(`Invalid 'data' param: ${params.data} in query`);
+            throw new Error(`Invalid 'data' param '${params.data}' in query`);
         }
         if (typeof params.ss1 !== "string") {
-            throw new Error(`Invalid 'ss1' param: ${params.ss1}`);
+            throw new Error(`Invalid 'ss1' param '${params.ss1}'`);
         }
         if (typeof params.ss2 !== "string") {
-            throw new Error(`Invalid 'ss2' param: ${params.ss2}`);
+            throw new Error(`Invalid 'ss2' param '${params.ss2}'`);
         }
         return this.decodePaymentResponse(params.data, params.ss1, params.ss2);
     }
