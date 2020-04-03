@@ -9,6 +9,7 @@
     "strict": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "declaration": true,
     "outDir": "dist"
   },
   "include": ["src/**/*.ts"],
