@@ -4,7 +4,7 @@
   "description": "",
   "main": "dist/WebToPay.js",
   "scripts": {
-    "build": "rm -r dist && tsc",
+    "build": "rm -rf dist && tsc",
     "test": "jest ",
     "test:generate": "php -f test/"
   },
