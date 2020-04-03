@@ -50,13 +50,13 @@ export interface PaymentNotification {
     account: string;
     personcodestatus: PersonCodeStatus;
 }
-declare enum PaymentStatus {
+export declare enum PaymentStatus {
     NotExecuted = 0,
     Successful = 1,
     Accepted = 2,
     AdditionalInfo = 3
 }
-declare enum PersonCodeStatus {
+export declare enum PersonCodeStatus {
     UnknownYet = 0,
     Match = 1,
     NotMatch = 2,
@@ -77,4 +77,3 @@ export default class WebToPay {
     private verifyHashSignature;
     private verifyAsymmetricSignature;
 }
-export {};

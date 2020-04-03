@@ -14,14 +14,14 @@ var PaymentStatus;
     PaymentStatus[PaymentStatus["Successful"] = 1] = "Successful";
     PaymentStatus[PaymentStatus["Accepted"] = 2] = "Accepted";
     PaymentStatus[PaymentStatus["AdditionalInfo"] = 3] = "AdditionalInfo";
-})(PaymentStatus || (PaymentStatus = {}));
+})(PaymentStatus = exports.PaymentStatus || (exports.PaymentStatus = {}));
 var PersonCodeStatus;
 (function (PersonCodeStatus) {
     PersonCodeStatus[PersonCodeStatus["UnknownYet"] = 0] = "UnknownYet";
     PersonCodeStatus[PersonCodeStatus["Match"] = 1] = "Match";
     PersonCodeStatus[PersonCodeStatus["NotMatch"] = 2] = "NotMatch";
     PersonCodeStatus[PersonCodeStatus["Unkonwn"] = 3] = "Unkonwn";
-})(PersonCodeStatus || (PersonCodeStatus = {}));
+})(PersonCodeStatus = exports.PersonCodeStatus || (exports.PersonCodeStatus = {}));
 const defaultVersion = "1.6";
 class WebToPay {
     constructor(projectPassword) {
